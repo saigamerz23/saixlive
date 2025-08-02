@@ -1,4 +1,8 @@
-</style>
+
+
+    
+
+  </style>
 
 </head>
 
@@ -39,3 +43,87 @@
     allow="autoplay; encrypted-media"
 
     sandbox="allow-forms allow-pointer-lock allow-same-origin allow-scripts allow-top-navigation"
+
+  ></iframe>
+
+</div>
+
+<div class="sidebar" id="sidebar">
+
+  <div class="menu-header">MENU</div>
+
+  <a href="https://t.me/saixclips" target="_blank"> Join Our Telegram</a>
+
+  <a href="https://t.me/saixclips" target="_blank"> Contact Us</a>
+
+  <a href="https://t.me/saixclips" target="_blank">Copyright</a>
+
+<a href="#" onclick="showVisitorPopup()">Total Visitor</a>
+
+</div>
+
+<div class="overlay" id="overlay" onclick="toggleSidebar()"></div>
+
+  <div class="tabs">
+
+    <button class="tab-button active" onclick="switchTab('chat')">
+
+      <span class="material-icons">chat</span>
+
+      <span>Live Chat</span>
+
+    </button>
+
+    <button class="tab-button" onclick="switchTab('scoreboard')">
+
+      <span class="material-icons">leaderboard</span>
+
+      <span>Scoreboard</span>
+
+    </button>
+
+    <button class="tab-button" onclick="switchTab('highlights')">
+
+      <span class="material-icons">movie</span>
+
+      <span>Highlights</span>
+
+    </button>
+
+  </div>
+
+  <div id="chat" class="tab-content active">
+
+    <iframe src="https://cricketstan.github.io/Live-Chat/"></iframe>
+
+  </div>
+
+  <div id="scoreboard" class="tab-content">
+
+    <iframe src="https://live-scoreboard.pages.dev/"></iframe>
+
+  </div>
+
+  <div id="highlights" class="tab-content">
+
+<iframe src="https://cricketstan.github.io/Top-moments-/" allowfullscreen></iframe> 
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+
+  <script src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
+
+  <script>
+
+    const jsonUrl = 'https://raw.githubusercontent.com/StmpupCricket/Star-Sports-Hindi-json/refs/heads/main/data.json';
+
+    fetch(jsonUrl)
+
+      .then(res => res.json())
+
+      .then(data => {
+
+        const m3u8Url = data.stream_url;
+
+        const video = document.getElementById('player');
