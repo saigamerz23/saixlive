@@ -1,129 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CrickPix - Cricket HD Wallpapers</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #ffffff;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
 
+    h1 {
+      color: #007bff;
+      padding: 20px;
+    }
 
-    
+    .wallpaper {
+      margin: 20px auto;
+      max-width: 90%;
+    }
 
+    .wallpaper img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #aaa;
+    }
+
+    .download-btn {
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .download-btn:hover {
+      background-color: #0056b3;
+    }
   </style>
-
 </head>
-
 <body>
 
-<!    <div class="popup-subtitle">Join our Telegram for latest updates.</div>
+  <h1>CrickPix 🏏 HD Wallpapers</h1>
 
-    <div class="popup-buttons">
-
-      <a href="https://t.me/saixclips" target="_blank" class="popup-btn join-btn">Join Now</a>
-
-      <button class="popup-btn already-btn" onclick="closePopup()">Already Joined</button>
-
-    </div>
-
+  <!-- Wallpaper 1 -->
+  <div class="wallpaper">
+    <img src="https://i.pinimg.com/originals/3d/79/30/3d7930b43f407b1a437d178ec7232a56.jpg" alt="Wallpaper 1">
+    <br>
+    <a href="https://i.pinimg.com/originals/3d/79/30/3d7930b43f407b1a437d178ec7232a56.jpg" download class="download-btn">Download</a>
   </div>
 
-</div>
-
-  <header>
-
-<span class="material-icons menu-icon" onclick="toggleSidebar()">menu</span>
-
-    <img src="https://ibb.co/7JxCxSVX"><img src="https://i.ibb.co/WWN5NHF6/Picsart-25-08-02-23-46-39-006.jpg" alt="Picsart-25-08-02-23-46-39-006" alt="Logo">
-
-  </header>
-
-<div class="video-container">
-
-  <iframe
-
-    src="https://cricketstan.github.io/Y/"
-
-    frameborder="0"
-
-    allowfullscreen
-
-    allow="autoplay; encrypted-media"
-
-    sandbox="allow-forms allow-pointer-lock allow-same-origin allow-scripts allow-top-navigation"
-
-  ></iframe>
-
-</div>
-
-<div class="sidebar" id="sidebar">
-
-  <div class="menu-header">MENU</div>
-
-  <a href="https://t.me/saixclips" target="_blank"> Join Our Telegram</a>
-
-  <a href="https://t.me/saixclips" target="_blank"> Contact Us</a>
-
-  <a href="https://t.me/saixclips" target="_blank">Copyright</a>
-
-<a href="#" onclick="showVisitorPopup()">Total Visitor</a>
-
-</div>
-
-<div class="overlay" id="overlay" onclick="toggleSidebar()"></div>
-
-  <div class="tabs">
-
-    <button class="tab-button active" onclick="switchTab('chat')">
-
-      <span class="material-icons">chat</span>
-
-      <span>Live Chat</span>
-
-    </button>
-
-    <button class="tab-button" onclick="switchTab('scoreboard')">
-
-      <span class="material-icons">leaderboard</span>
-
-      <span>Scoreboard</span>
-
-    </button>
-
-    <button class="tab-button" onclick="switchTab('highlights')">
-
-      <span class="material-icons">movie</span>
-
-      <span>Highlights</span>
-
-    </button>
-
+  <!-- Wallpaper 2 -->
+  <div class="wallpaper">
+    <img src="https://i.pinimg.com/originals/87/2b/3c/872b3ce6b3aaae11838883efb0a5e2ee.jpg" alt="Wallpaper 2">
+    <br>
+    <a href="https://i.pinimg.com/originals/87/2b/3c/872b3ce6b3aaae11838883efb0a5e2ee.jpg" download class="download-btn">Download</a>
   </div>
 
-  <div id="chat" class="tab-content active">
+  <!-- Add more wallpapers below by duplicating above blocks -->
 
-    <iframe src="https://cricketstan.github.io/Live-Chat/"></iframe>
-
-  </div>
-
-  <div id="scoreboard" class="tab-content">
-
-    <iframe src="https://live-scoreboard.pages.dev/"></iframe>
-
-  </div>
-
-  <div id="highlights" class="tab-content">
-
-<iframe src="https://cricketstan.github.io/Top-moments-/" allowfullscreen></iframe> 
-
-  </div>
-
-  <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
-
-  <script src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
-
-  <script>
-
-    const jsonUrl = 'https://raw.githubusercontent.com/StmpupCricket/Star-Sports-Hindi-json/refs/heads/main/data.json';
-
-    fetch(jsonUrl)
-
-      .then(res => res.json())
-
-      .then(data => {
-
-        const m3u8Url = data.stream_url;
-
-        const video = document.getElementById('player');
+</body>
+</html>
